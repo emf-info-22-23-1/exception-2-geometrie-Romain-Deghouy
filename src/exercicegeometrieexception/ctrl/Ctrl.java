@@ -41,6 +41,9 @@ public class Ctrl implements ICtrlIhm {
                 refIhm.afficheMessage("Veuillez entrer une valeur valide pour la longueur du rectangle ( " + valueLongueur + " invalide )");
             }
         }
+        catch (ArithmeticException e){
+            refIhm.afficheMessage("Veuillez entrer une valeur valide pour la longueur du rectangle (On ne divise pas par 0)");
+        }
     }
 
     public void setRefIhm(IIhmCtrl refIhm) {
