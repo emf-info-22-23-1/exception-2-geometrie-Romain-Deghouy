@@ -19,7 +19,7 @@ public class Ctrl implements ICtrlIhm {
             double valueDouble = Double.parseDouble(value);
             refIhm.afficheResultatCircle(String.valueOf(refWorker.calcRadiusCircleFromArea(valueDouble)));
         } catch (NumberFormatException e) {
-            refIhm.afficheMessage("Veuillez entrer une valeur valide pour l'aire du cercle ( " + value + " invaldie )");
+            refIhm.afficheMessage("Veuillez entrer une valeur valide pour l'aire du cercle ( " + value + " invalide )");
         }
     }
 
@@ -36,9 +36,9 @@ public class Ctrl implements ICtrlIhm {
             refIhm.afficheResultatRectangle(String.valueOf(refWorker.calcLargeurFromRectangle(valueAreaDouble, valueLongueurDouble)));
         } catch (NumberFormatException e) {
             if (areaValide == false) {
-                refIhm.afficheMessage("Veuillez entrer une valeur valide pour l'aire du rectangle ( " + valueArea + " invaldie )");
+                refIhm.afficheMessage("Veuillez entrer une valeur valide pour l'aire du rectangle ( " + valueArea + " invalide )");
             } else if (longueurValide == false) {
-                refIhm.afficheMessage("Veuillez entrer une valeur valide pour la longueur du rectangle ( " + valueLongueur + " invaldie )");
+                refIhm.afficheMessage("Veuillez entrer une valeur valide pour la longueur du rectangle ( " + valueLongueur + " invalide )");
             }
         }
     }
