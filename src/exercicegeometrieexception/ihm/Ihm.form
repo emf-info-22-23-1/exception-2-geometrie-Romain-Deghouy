@@ -23,7 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="tMessage" alignment="1" pref="499" max="32767" attributes="0"/>
+          <Component id="tMessage" alignment="1" pref="664" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -135,6 +135,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="tAireCercle">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="tAireC" noResource="true"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
